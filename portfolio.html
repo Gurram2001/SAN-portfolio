@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G Mani Karthik - Storage & Cloud Engineer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+    header {
+      background: rgba(0,0,0,0.4);
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      font-style: italic;
+      color: #ddd;
+    }
+    nav {
+      background: #111;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #f4f4f4;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #1abc9c;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #1abc9c;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .skills span {
+      display: inline-block;
+      background: #1abc9c;
+      color: #111;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .job {
+      margin-bottom: 25px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #1abc9c;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    /* Simple animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>G Mani Karthik</h1>
+    <p>Storage Engineer | Cloud & Infrastructure Specialist</p>
+  </header>
+
+  <nav>
+    <a href="#summary">Summary</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="summary" class="fade-in">
+    <h2>Professional Summary</h2>
+    <p>
+      Storage Engineer skilled in managing SAN/NAS environments, replication, provisioning,
+      and performance optimization. Strong hands-on experience with EMC VMAX, VNX, ViPR,
+      HP, IBM storage, and Brocade fabrics. Experienced with AWS, Azure, and Docker for hybrid-cloud infrastructure.
+      Proven track record in managing critical incidents with minimal downtime.
+    </p>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <h2>Core Skills</h2>
+    <div class="skills">
+      <span>SAN/NAS (EMC, VMAX, VNX)</span>
+      <span>Replication (SRDF, Snapshots, Clones)</span>
+      <span>Disaster Recovery</span>
+      <span>LUN Provisioning</span>
+      <span>Brocade Zoning</span>
+      <span>AWS Cloud</span>
+      <span>Azure Cloud</span>
+      <span>Docker & Containers</span>
+    </div>
+  </section>
+
+  <section id="experience" class="fade-in">
+    <h2>Work Experience</h2>
+    <div class="job">
+      <h3>AI Cloud Engineer | ARCAP REIT AI Solutions (Remote)</h3>
+      <small>Jul 2025 – Present</small>
+      <ul>
+        <li>Supported cloud infrastructure on Azure and AWS.</li>
+        <li>Built and deployed containerized workloads using Docker and ACR.</li>
+        <li>Applied training knowledge into production use cases.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Infrastructure Engineer | YANSERV</h3>
+      <small>Jun 2024 – May 2025</small>
+      <ul>
+        <li>Designed and deployed AWS-based architectures (EC2, S3, EKS, Lambda).</li>
+        <li>Worked on infrastructure deployment and scaling for startup growth.</li>
+        <li>Aligned technical infrastructure with product roadmap and business needs.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Storage Engineer (ASE) | Accenture, Hyderabad</h3>
+      <small>Nov 2022 – Feb 2024</small>
+      <ul>
+        <li>Managed SAN/NAS environments (EMC, HP, IBM).</li>
+        <li>Provisioned storage, LUNs, masking/mapping, volume integration.</li>
+        <li>Implemented Thin & Auto Provisioning on VMAX.</li>
+        <li>Handled SRDF, Snapshots, and disaster recovery drills.</li>
+        <li>Configured zoning and fabric security on Brocade switches.</li>
+        <li>Provided on-call support for major incidents.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:manikarthik2g@gmail.com">manikarthik2g@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+  </section>
+
+  <footer>
+    © 2024 [Your Name]. All Rights Reserved.
+  </footer>
+
+  <script>
+    // Add fade-in scroll animation
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -60px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        entry.target.classList.add("visible");
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
+  </script>
+</body>
+</html>
